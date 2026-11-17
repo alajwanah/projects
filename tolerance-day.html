@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسامح.. قيمة تُبنى بالتربية | متوسطة تحفيظ القرآن الأولى ببيشة</title>
+
+    <!-- خطوط Google Fonts: Tajawal و Cairo و Amiri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@600;700;800&family=Cinzel+Decorative:wght@700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           1. المتغيرات اللونية والأساسيات (Pure CSS - Self-Contained)
+           ========================================================= */
+        :root {
+            --moe-teal: #00A896;
+            --moe-dark-teal: #007A6E;
+            --moe-purple: #6A359C;
+            --moe-blue: #3949AB;
+            --saudi-green: #006C35;
+            --royal-gold: #D4AF37;
+            --dark-gold: #A67C00;
+            --soft-gold: #FDFBF4;
+            --bg-light: #F4F7F6;
+            --text-dark: #1E293B;
+            --text-muted: #475569;
+            --white: #FFFFFF;
+            --radius-lg: 24px;
+            --radius-md: 16px;
+            --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.06);
+            --shadow-royal: 0 25px 50px -12px rgba(106, 53, 156, 0.14);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Tajawal', Tahoma, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ضبط صارم لأحجام أيقونات SVG لمنع تضخمها نهائياً */
+        svg {
+            display: inline-block;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* =========================================================
+           2. شريط التنقل العلوي (Sticky Navbar)
+           ========================================================= */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .navbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 12px 0;
+        }
+
+        .brand-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--moe-purple), var(--moe-teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            box-shadow: 0 4px 12px rgba(106, 53, 156, 0.25);
+        }
+
+        .brand-title {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            color: var(--moe-purple);
+            line-height: 1.3;
+        }
+
+        .brand-subtitle {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--moe-teal);
+        }
+
+        /* =========================================================
+           3. الواجهة الرئيسية والترويسة (Hero Banner)
+           ========================================================= */
+        .hero {
+            background: linear-gradient(135deg, var(--moe-blue) 0%, var(--moe-purple) 50%, var(--moe-teal) 100%);
+            color: var(--white);
+            padding: 48px 20px 96px;
+            border-bottom-left-radius: 44px;
+            border-bottom-right-radius: 44px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(57, 73, 171, 0.2);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.18) 2px, transparent 2px);
+            background-size: 32px 32px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .ministry-header {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            padding: 12px 28px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .ministry-line-1 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #FDE68A;
+        }
+
+        .ministry-line-2 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--white);
+            margin: 2px 0;
+        }
+
+        .hashtag-pill {
+            display: inline-block;
+            background: rgba(0, 168, 150, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            color: var(--white);
+            padding: 5px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .hero-title {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 900;
+            font-size: clamp(2rem, 5vw, 3.3rem);
+            line-height: 1.25;
+            margin-bottom: 12px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        }
+
+        .hero-slogan {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+            color: #FDE68A;
+            margin-bottom: 22px;
+        }
+
+        .student-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.16);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        /* =========================================================
+           4. بطاقة الإهداء الملكية الفاخرة (Royal Dedication Card)
+           ========================================================= */
+        .dedication-section {
+            margin-top: -56px;
+            position: relative;
+            z-index: 10;
+            margin-bottom: 64px;
+        }
+
+        .royal-card {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FCF9F0 100%);
+            border: 2px solid var(--royal-gold);
+            border-radius: 32px;
+            padding: clamp(24px, 5vw, 56px);
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-royal), 0 0 0 6px rgba(255, 255, 255, 0.85), 0 0 0 8px rgba(0, 168, 150, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .royal-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: 
+                radial-gradient(circle at 20px 20px, rgba(212, 175, 55, 0.09) 2px, transparent 0),
+                radial-gradient(circle at 60px 60px, rgba(0, 168, 150, 0.07) 2px, transparent 0);
+            background-size: 80px 80px;
+            pointer-events: none;
+        }
+
+        .corner-ornament {
+            position: absolute;
+            color: var(--royal-gold);
+            opacity: 0.65;
+            pointer-events: none;
+        }
+        .corner-tr { top: 18px; right: 18px; }
+        .corner-tl { top: 18px; left: 18px; }
+        .corner-br { bottom: 18px; right: 18px; }
+        .corner-bl { bottom: 18px; left: 18px; }
+
+        .dedication-header {
+            text-align: center;
+            margin-bottom: 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .dedication-word {
+            font-family: 'Amiri', serif;
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: var(--moe-purple);
+            margin-bottom: 6px;
+        }
+
+        .gold-divider {
+            width: 110px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--royal-gold), transparent);
+            margin: 0 auto 16px;
+        }
+
+        .dedication-to {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+            color: var(--moe-dark-teal);
+            line-height: 1.5;
+        }
+
+        .dedication-to span {
+            color: var(--moe-purple);
+            display: block;
+            font-size: clamp(1.25rem, 2.8vw, 1.65rem);
+        }
+
+        .literary-body {
+            font-family: 'Amiri', Georgia, serif;
+            font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+            line-height: 2.15;
+            color: #1E293B;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .literary-body p {
+            margin-bottom: 20px;
+        }
+
+        .literary-highlight {
+            font-family: 'Amiri', serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: var(--moe-purple);
+            display: block;
+            margin: 12px 0 6px;
+        }
+
+        .quran-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.14) 0%, rgba(0, 168, 150, 0.08) 50%, rgba(106, 53, 156, 0.08) 100%);
+            border-right: 4px solid var(--royal-gold);
+            border-left: 4px solid var(--royal-gold);
+            border-top: 1px solid rgba(212, 175, 55, 0.4);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 18px;
+            padding: 22px 24px;
+            margin: 28px 0;
+            text-align: center;
+        }
+
+        .quran-intro {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--moe-dark-teal);
+            margin-bottom: 6px;
+        }
+
+        .quran-verse {
+            font-family: 'Amiri', serif;
+            font-weight: 700;
+            font-size: clamp(1.4rem, 3vw, 1.85rem);
+            color: var(--saudi-green);
+            line-height: 1.9;
+        }
+
+        .ya-allah {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.08em;
+            color: var(--moe-dark-teal);
+            display: inline-block;
+            padding: 0 4px;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.6);
+        }
+
+        .dedication-signature {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(212, 175, 55, 0.45);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .sig-love {
+            font-family: 'Amiri', serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 1.45rem;
+            color: var(--moe-purple);
+            margin-bottom: 12px;
+        }
+
+        .sig-card {
+            display: inline-block;
+            background: linear-gradient(90deg, #F0FDFA, #FFFBEB, #F5F3FF);
+            border: 1px solid rgba(212, 175, 55, 0.65);
+            padding: 16px 36px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .sig-name {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: var(--text-dark);
+        }
+
+        .sig-name span {
+            color: var(--moe-purple);
+        }
+
+        .sig-class {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--moe-dark-teal);
+            margin-top: 2px;
+        }
+
+        /* توقيع alajwanah المتوهج داخل بوكس الطالبة */
+        .alajwanah-signature-link {
+            font-family: 'Cinzel Decorative', serif;
+            font-style: italic;
+            font-weight: 900;
+            font-size: 0.75rem;
+            letter-spacing: 1.2px;
+            color: var(--moe-purple);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 4px 14px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px dashed rgba(212, 175, 55, 0.8);
+            text-shadow: 0 0 8px rgba(106, 53, 156, 0.4), 0 0 14px rgba(212, 175, 55, 0.6);
+            box-shadow: 0 4px 12px rgba(106, 53, 156, 0.15);
+            animation: signatureGlowPulse 2.5s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+
+        .alajwanah-signature-link:hover {
+            color: var(--moe-teal);
+            transform: scale(1.05) translateY(-2px);
+            text-shadow: 0 0 12px rgba(0, 168, 150, 0.8), 0 0 20px rgba(212, 175, 55, 0.9);
+            box-shadow: 0 6px 18px rgba(0, 168, 150, 0.3);
+            border-color: var(--moe-teal);
+        }
+
+        @keyframes signatureGlowPulse {
+            0%, 100% {
+                text-shadow: 0 0 6px rgba(106, 53, 156, 0.35), 0 0 12px rgba(212, 175, 55, 0.5);
+                box-shadow: 0 4px 12px rgba(106, 53, 156, 0.12);
+            }
+            50% {
+                text-shadow: 0 0 14px rgba(106, 53, 156, 0.7), 0 0 22px rgba(212, 175, 55, 0.9);
+                box-shadow: 0 6px 18px rgba(212, 175, 55, 0.3);
+            }
+        }
+
+        /* =========================================================
+           5. قسم المعلومات الخفيفة (القيم والمحاور)
+           ========================================================= */
+        .section-block {
+            margin-bottom: 64px;
+            scroll-margin-top: 85px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .section-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(90deg, var(--moe-purple), var(--moe-teal));
+            color: var(--white);
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            padding: 10px 28px;
+            border-radius: 50px;
+            box-shadow: 0 6px 18px rgba(106, 53, 156, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .section-desc {
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 500;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .pillar-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px 22px;
+            text-align: center;
+            border: 1px solid #E2E8F0;
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 32px rgba(0, 168, 150, 0.14);
+            border-color: var(--moe-teal);
+        }
+
+        .pillar-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 18px;
+            background: var(--moe-teal);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            box-shadow: 0 8px 18px rgba(0, 168, 150, 0.25);
+        }
+
+        .pillar-title {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .pillar-text {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+
+        .dimensions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .dim-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow-soft);
+            border-top: 6px solid var(--moe-purple);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .dim-card.saudi {
+            border-top-color: var(--saudi-green);
+        }
+
+        .dim-card.human {
+            border-top-color: var(--moe-teal);
+        }
+
+        .dim-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .dim-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+
+        .dim-card.islam .dim-icon { background: var(--moe-purple); }
+        .dim-card.saudi .dim-icon { background: var(--saudi-green); }
+        .dim-card.human .dim-icon { background: var(--moe-teal); }
+
+        .dim-title {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        .dim-card.islam .dim-title { color: var(--moe-purple); }
+        .dim-card.saudi .dim-title { color: var(--saudi-green); }
+        .dim-card.human .dim-title { color: var(--moe-dark-teal); }
+
+        .dim-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .dim-list li {
+            background: #F8FAFC;
+            padding: 12px 14px;
+            border-radius: 12px;
+            font-size: 0.92rem;
+            color: var(--text-dark);
+            border-right: 3px solid #CBD5E1;
+        }
+
+        .dim-card.islam .dim-list li { border-right-color: var(--moe-purple); background: #FAF5FF; }
+        .dim-card.saudi .dim-list li { border-right-color: var(--saudi-green); background: #F0FDF4; }
+        .dim-card.human .dim-list li { border-right-color: var(--moe-teal); background: #F0FDFA; }
+
+        .dim-list strong {
+            display: block;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.98rem;
+            margin-bottom: 2px;
+        }
+
+        /* =========================================================
+           6. قسم الاختبار التفاعلي السريع (Quiz Section)
+           ========================================================= */
+        .quiz-wrapper {
+            background: var(--white);
+            border-radius: 30px;
+            padding: clamp(22px, 4vw, 44px);
+            max-width: 840px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-royal);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+        }
+
+        .student-inputs-box {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 24px;
+        }
+
+        .inputs-label-header {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--moe-dark-teal);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .inputs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1.5px solid #CBD5E1;
+            border-radius: 12px;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            background: var(--white);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--moe-teal);
+            box-shadow: 0 0 0 3px rgba(0, 168, 150, 0.15);
+        }
+
+        .input-group input::placeholder {
+            color: #94A3B8;
+            opacity: 0.75;
+            font-weight: 500;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 10px;
+            background: #E2E8F0;
+            border-radius: 50px;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 20%;
+            background: linear-gradient(90deg, var(--moe-purple), var(--moe-teal));
+            border-radius: 50px;
+            transition: width 0.4s ease;
+        }
+
+        .question-card {
+            background: #F8FAFC;
+            padding: 20px;
+            border-radius: 18px;
+            border-right: 4px solid var(--moe-purple);
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            margin-bottom: 18px;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            width: 100%;
+            text-align: right;
+            padding: 14px 18px;
+            border-radius: 14px;
+            border: 2px solid #E2E8F0;
+            background: var(--white);
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--moe-teal);
+            background: #F0FDFA;
+            transform: translateX(-4px);
+        }
+
+        .option-btn:disabled {
+            cursor: default;
+        }
+
+        .option-btn.correct {
+            border-color: var(--saudi-green);
+            background: #DCFCE7;
+            color: #14532D;
+        }
+
+        .option-btn.wrong {
+            border-color: #DC2626;
+            background: #FEE2E2;
+            color: #7F1D1D;
+        }
+
+        .feedback-banner {
+            margin-top: 16px;
+            padding: 14px 18px;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feedback-banner.show {
+            display: flex;
+        }
+
+        .feedback-banner.success {
+            background: #DCFCE7;
+            color: #166534;
+            border: 1px solid #86EFAC;
+        }
+
+        .feedback-banner.encourage {
+            background: #FEF3C7;
+            color: #92400E;
+            border: 1px solid #FDE68A;
+        }
+
+        .quiz-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--moe-purple), var(--moe-blue));
+            color: var(--white);
+            border: none;
+            padding: 12px 28px;
+            border-radius: 14px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 6px 16px rgba(106, 53, 156, 0.25);
+            transition: transform 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .quiz-result-box {
+            display: none;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .trophy-circle {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            background: #FEF3C7;
+            border: 2px solid var(--royal-gold);
+            color: #D97706;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .btn-reset {
+            background: transparent;
+            border: 1.5px solid var(--moe-teal);
+            color: var(--moe-dark-teal);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-top: 14px;
+        }
+
+        /* =========================================================
+           7. شهادة الشكر والتقدير الفورية (Certificate Section)
+           ========================================================= */
+        .certificate-section {
+            display: none;
+            max-width: 920px;
+            margin: 0 auto 70px;
+            padding: 0 20px;
+        }
+
+        .certificate-section.visible {
+            display: block;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cert-toolbar {
+            background: var(--white);
+            padding: 16px 22px;
+            border-radius: 18px;
+            border: 1px solid #E2E8F0;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+
+        .cert-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-print {
+            background: var(--moe-purple);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: 0.92rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-download {
+            background: var(--moe-teal);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: 0.92rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .certificate-frame {
+            background: var(--white);
+            padding: 14px;
+            border-radius: 22px;
+            background-image: linear-gradient(135deg, var(--royal-gold), var(--moe-teal), var(--moe-purple), var(--royal-gold));
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .certificate-inner {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FDFBF4 100%);
+            border-radius: 14px;
+            padding: clamp(24px, 4vw, 46px);
+            border: 2px solid rgba(212, 175, 55, 0.65);
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .cert-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding-bottom: 18px;
+            border-bottom: 1.5px solid rgba(212, 175, 55, 0.45);
+            margin-bottom: 24px;
+        }
+
+        .cert-ministry {
+            text-align: right;
+            font-size: 0.85rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .cert-ministry .saudi { color: var(--saudi-green); }
+        .cert-ministry .edu { color: var(--text-muted); }
+        .cert-ministry .school { color: var(--moe-purple); font-family: 'Cairo', sans-serif; font-weight: 800; font-size: 0.98rem; }
+
+        .cert-medal {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, var(--moe-purple), var(--moe-teal));
+            color: #FDE68A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--royal-gold);
+            box-shadow: 0 6px 15px rgba(106, 53, 156, 0.25);
+        }
+
+        .cert-date-box {
+            text-align: left;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--moe-dark-teal);
+        }
+
+        .cert-main-title {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--moe-purple);
+            margin-bottom: 4px;
+        }
+
+        .cert-sub-slogan {
+            font-weight: 700;
+            font-size: 0.98rem;
+            color: var(--moe-teal);
+            margin-bottom: 22px;
+        }
+
+        .cert-body-text {
+            font-size: 1.08rem;
+            color: var(--text-dark);
+            margin-bottom: 14px;
+        }
+
+        .cert-student-plate {
+            display: inline-block;
+            background: linear-gradient(90deg, #F0FDFA, #FFFBEB, #F5F3FF);
+            border: 1.5px solid var(--royal-gold);
+            border-radius: 16px;
+            padding: 14px 40px;
+            margin: 8px 0 18px;
+            min-width: 280px;
+        }
+
+        .cert-student-name {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.35rem, 3vw, 1.85rem);
+            color: var(--text-dark);
+            display: block;
+        }
+
+        .cert-student-grade {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--moe-dark-teal);
+            margin-top: 2px;
+            display: block;
+        }
+
+        .cert-description {
+            max-width: 680px;
+            margin: 0 auto 28px;
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .cert-footer-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+            padding-top: 18px;
+            border-top: 1.5px solid rgba(212, 175, 55, 0.45);
+        }
+
+        .cert-footer-right {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        .cert-seal {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            border: 2px dashed var(--royal-gold);
+            background: rgba(254, 243, 199, 0.45);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: var(--moe-purple);
+            transform: rotate(-8deg);
+        }
+
+        .cert-footer-left {
+            text-align: left;
+        }
+
+        .principal-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .principal-name {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 900;
+            font-size: 1.15rem;
+            color: var(--moe-purple);
+        }
+
+        /* =========================================================
+           8. تذييل الصفحة (Footer)
+           ========================================================= */
+        .footer {
+            background: #0F172A;
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 4px solid var(--royal-gold);
+        }
+
+        .footer-rights {
+            direction: ltr;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #FDE68A;
+            margin-bottom: 6px;
+        }
+
+        .footer-brand {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #FFFFFF;
+            margin-bottom: 4px;
+        }
+
+        .footer-brand span {
+            font-family: 'Cinzel Decorative', serif;
+            color: #5EEAD4;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-location {
+            font-size: 0.9rem;
+            color: #CBD5E1;
+        }
+
+        /* زر واتساب العائم */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            left: 22px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: #25D366;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 22px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.55);
+        }
+
+        /* إشعار مخصص */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #1E293B;
+            color: var(--white);
+            padding: 12px 22px;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: none;
+            align-items: center;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 10mm;
+            }
+
+            body {
+                background: #FFFFFF !important;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .certificate-section {
+                display: block !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .certificate-frame {
+                box-shadow: none !important;
+                width: 100% !important;
+                page-break-inside: avoid;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .certificate-inner {
+                padding: 28px 36px !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. شريط التنقل العلوي -->
+    <nav class="navbar no-print">
+        <div class="container navbar-inner">
+            <div class="brand-box">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="brand-title">متوسطة تحفيظ القرآن الأولى ببيشة</div>
+                    <div class="brand-subtitle">التسامح.. قيمة تُبنى بالتربية | 16 نوفمبر</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. الواجهة الرئيسية والترويسة -->
+    <header class="hero no-print">
+        <div class="hero-content">
+            <div class="ministry-header">
+                <span class="ministry-line-1">المملكة العربية السعودية — وزارة التعليم</span>
+                <span class="ministry-line-2">متوسطة تحفيظ القرآن الأولى ببيشة</span>
+            </div>
+
+            <div>
+                <span class="hashtag-pill">#اليوم_الدولي_للتسامح | 16 نوفمبر</span>
+            </div>
+
+            <h1 class="hero-title">التسامح.. قيمة تُبنى بالتربية</h1>
+            <p class="hero-slogan">«التسامح قوة أخلاقية وجمال إنساني»</p>
+
+            <div class="student-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDE68A" stroke-width="2.2">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                </svg>
+                <span>إهداء ومبادرة الطالبة: أجوان يوسف القرني — الصف الثالث المتوسط تحفيظ (ب)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container no-print">
+
+        <!-- 3. بطاقة الإهداء الملكية الفاخرة -->
+        <section id="dedication" class="dedication-section">
+            <div class="royal-card">
+                <!-- زخارف الزوايا -->
+                <div class="corner-ornament corner-tr">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/></svg>
+                </div>
+                <div class="corner-ornament corner-tl">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/></svg>
+                </div>
+                <div class="corner-ornament corner-br">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/></svg>
+                </div>
+                <div class="corner-ornament corner-bl">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/></svg>
+                </div>
+
+                <div class="dedication-header">
+                    <div class="dedication-word">إهداء</div>
+                    <div class="gold-divider"></div>
+                    <h2 class="dedication-to">
+                        إلى صرح العلم والقيم
+                        <span>متوسطة تحفيظ القرآن الأولى ببيشة</span>
+                    </h2>
+                </div>
+
+                <div class="literary-body">
+                    <p>
+                        إلى المكان الذي لم يكن يومًا جدرانًا نلتقي بينها، ولا مقاعد نحمل إليها كتبنا فحسب؛ بل كان وطنًا صغيرًا تتسع فيه أرواحنا للتعلّم، وتنضج فيه أفكارنا، ونتعلم على عتباته كيف نكون أكثر إنسانيةً ونبلًا.
+                    </p>
+
+                    <p>
+                        أهدي هذه الكلمات إلى مدرستي، وفي قلبي يقين بأن أجمل ما يمكن أن يتعلمه الإنسان ليس ما تحفظه الذاكرة من علم، بل ما تستقر عليه الروح من خُلُق.
+                    </p>
+
+                    <span class="literary-highlight">التسامح...</span>
+                    <p>
+                        تلك الفضيلة التي تشبه نافذةً تُفتح في جدار القلب، فيدخل منها النور بعد طول عتمة. ليس التسامح أن ننسى ما آلمنا، ولا أن نتظاهر بأن الجراح لم تكن؛ بل أن نمتلك من سموّ النفس ما يجعلنا نترفع عن الإساءة، ومن نقاء القلب ما يعيننا على ألا نرد القسوة بمثلها.
+                    </p>
+
+                    <div class="quran-box">
+                        <div class="quran-intro">قال تعالى:</div>
+                        <div class="quran-verse">﴿وَلْيَعْفُوا وَلْيَصْفَحُوا ۗ أَلَا تُحِبُّونَ أَنْ يَغْفِرَ اللَّهُ لَكُمْ﴾</div>
+                    </div>
+
+                    <p>
+                        <span class="ya-allah">بلى يا الله،</span> نحب مغفرتك، ونرجو عفوك؛ فامنح قلوبنا سعةً للصفح، ونفوسنا قدرةً على التجاوز، وأرواحنا نورًا لا تطفئه إساءة.
+                    </p>
+
+                    <p>
+                        إلى مدرستي العزيزة... أهدي هذه الصفحة، راجيةً أن تكون كلماتها تذكرةً بأن التسامح ليس مجرد خُلُق نتحلى به، بل نورٌ نختار أن نحمله في طريق الحياة.
+                    </p>
+                </div>
+
+                <div class="dedication-signature">
+                    <div class="sig-love">بكل الحب والامتنان...</div>
+                    <div class="sig-card">
+                        <div class="sig-name">الطالبة: <span>أجوان يوسف القرني</span></div>
+                        <div class="sig-class">الصف: الثالث المتوسط تحفيظ (ب)</div>
+                        <!-- توقيع alajwanah المتوهج كرابط يفتح في نافذة جديدة -->
+                        <div>
+                            <a href="https://alajwanah.github.io/ws/" target="_blank" rel="noopener" class="alajwanah-signature-link" aria-label="رابط موقع أجوان">
+                                alajwanah
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. قسم في المدرسة نتعلم أن -->
+        <section id="pillars" class="section-block">
+            <div class="section-heading">
+                <div class="section-pill">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    <span>في المدرسة نتعلم أن:</span>
+                </div>
+                <p class="section-desc">التعليم يبني القيم التي يصنع بها الإنسان علاقته بالآخرين والمجتمع</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">نتحاور دون إقصاء</h3>
+                    <p class="pillar-text">نستمع لآراء زميلاتنا بإنصات وتقدير، فالحوار الواعي يقرّب وجهات النظر ويجمع القلوب.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">نختلف دون إساءة</h3>
+                    <p class="pillar-text">الاختلاف في الرأي لا يفسد للود قضية، ونحفظ ألسنتنا من كل ما يجرح المشاعر.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">نتقبّل التنوع</h3>
+                    <p class="pillar-text">تنوع مواهبنا وشخصياتنا في مجتمعنا المدرسي يثري تجربتنا ويزيدنا تكاملاً وإبداعاً.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">نحترم الآخر</h3>
+                    <p class="pillar-text">الاحترام المتبادل هو أساس البيئة التربوية الآمنة والملهمة للعلم والعطاء.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. قسم المعلومات الخفيفة (الإسلامي - السعودي - الإنساني) -->
+        <section id="values" class="section-block">
+            <div class="section-heading">
+                <div class="section-pill">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <span>أبعاد التسامح في حياتنا</span>
+                </div>
+                <p class="section-desc">إضاءات معرفية تربط قيمة التسامح بديننا الحنيف وهويتنا الوطنية وإنسانيتنا</p>
+            </div>
+
+            <div class="dimensions-grid">
+                <!-- البعد الإسلامي -->
+                <div class="dim-card islam">
+                    <div class="dim-header">
+                        <div class="dim-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="dim-title">في ديننا الإسلامي</h3>
+                    </div>
+                    <ul class="dim-list">
+                        <li>
+                            <strong>أمرٌ قرآني كريم:</strong>
+                            حثّنا القرآن على كظم الغيظ والعفو: ﴿وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ﴾.
+                        </li>
+                        <li>
+                            <strong>العفو عند المقدرة:</strong>
+                            تجسّد في سيرة نبينا ﷺ حين عفا يوم فتح مكة بقوله: «اذهبوا فأنتم الطلقاء».
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- البعد السعودي -->
+                <div class="dim-card saudi">
+                    <div class="dim-header">
+                        <div class="dim-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                <line x1="4" y1="22" x2="4" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3 class="dim-title">في قيمنا السعودية</h3>
+                    </div>
+                    <ul class="dim-list">
+                        <li>
+                            <strong>أصالة الكرم والتآخي:</strong>
+                            تقوم ثقافتنا السعودية الأصيلة على إصلاح ذات البين والتلاحم ونبذ الفرقة.
+                        </li>
+                        <li>
+                            <strong>رؤية المملكة 2030:</strong>
+                            ترسخ قيم الوسطية والاعتدال والتسامح لبناء مجتمع حيوي متلاحم.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- البعد الإنساني -->
+                <div class="dim-card human">
+                    <div class="dim-header">
+                        <div class="dim-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="dim-title">قيمة إنسانية سامية</h3>
+                    </div>
+                    <ul class="dim-list">
+                        <li>
+                            <strong>السلام النفسي:</strong>
+                            التسامح يحرر القلب من ثقل الضغينة ويمنح النفس طمأنينة وصفاءً.
+                        </li>
+                        <li>
+                            <strong>جسور المحبة:</strong>
+                            يبني علاقات إنسانية راقية تقوم على الود والتعاون والرحمة بين البشر.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. قسم الاختبار التفاعلي السريع -->
+        <section id="quiz" class="section-block">
+            <div class="section-heading">
+                <div class="section-pill">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="9 11 12 14 22 4"></polyline>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                    <span>تحدي سفيرة التسامح</span>
+                </div>
+                <p class="section-desc">أجيبي على الأسئلة الخمسة البسيطة للحصول على شهادة شكر وتقدير فورية من إدارة المدرسة</p>
+            </div>
+
+            <div class="quiz-wrapper">
+                <!-- بيانات الطالبة القابلة للتعديل -->
+                <div class="student-inputs-box">
+                    <div class="inputs-label-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>بيانات الطالبة المشاركة (تُطبع مباشرة في الشهادة):</span>
+                    </div>
+                    <div class="inputs-grid">
+                        <div class="input-group">
+                            <label for="studentNameInput">اسم الطالبة:</label>
+                            <input type="text" id="studentNameInput" value="" placeholder="مثال : أجوان يوسف القرني">
+                        </div>
+                        <div class="input-group">
+                            <label for="studentClassInput">الصف الدراسي:</label>
+                            <input type="text" id="studentClassInput" value="" placeholder="مثال : الثالث المتوسط تحفيظ (ب)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- شريط التقدم -->
+                <div class="progress-header">
+                    <span id="questionCounter">السؤال 1 من 5</span>
+                    <span id="scoreDisplay" style="color: var(--moe-teal);">النقاط: 0 / 5</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progressBar" class="progress-fill"></div>
+                </div>
+
+                <!-- منطقة الأسئلة -->
+                <div id="quizBody">
+                    <div id="questionText" class="question-card"></div>
+                    <div id="optionsContainer" class="options-list"></div>
+                    <div id="feedbackBanner" class="feedback-banner"></div>
+                    <div class="quiz-actions">
+                        <button id="nextBtn" class="btn-primary" style="display: none;" onclick="handleNextQuestion()">
+                            <span>السؤال التالي</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- نتيجة الاختبار -->
+                <div id="quizResult" class="quiz-result-box">
+                    <div class="trophy-circle">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: 'Cairo', sans-serif; font-weight: 900; font-size: 1.5rem; color: var(--moe-purple); margin-bottom: 6px;">
+                        مبارك لكِ يا سفيرة التسامح!
+                    </h3>
+                    <p id="finalScoreText" style="font-weight: 700; color: var(--text-dark); margin-bottom: 6px;"></p>
+                    <p style="font-size: 0.92rem; color: var(--text-muted);">
+                        تم إصدار شهادة الشكر والتقدير الرسمية بالأسفل، يمكنكِ طباعتها أو تحميلها كصورة.
+                    </p>
+                    <button class="btn-reset" onclick="resetQuiz()">إعادة الاختبار لطالبة أخرى</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. شهادة الشكر والتقدير الفورية -->
+    <section id="certificateSection" class="certificate-section">
+        <div class="cert-toolbar no-print">
+            <div style="font-weight: 700; font-size: 0.95rem; color: var(--moe-purple);">
+                ✨ شهادتكِ الرسمية جاهزة للطباعة أو الحفظ كصورة PNG:
+            </div>
+            <div class="cert-buttons">
+                <button class="btn-print" onclick="window.print()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    <span>طباعة الشهادة / حفظ PDF</span>
+                </button>
+                <button class="btn-download" onclick="downloadCertificatePNG()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>تحميل الشهادة كصورة PNG</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="certificate-frame">
+            <div class="certificate-inner">
+                <div class="cert-top-bar">
+                    <div class="cert-ministry">
+                        <div class="saudi">المملكة العربية السعودية</div>
+                        <div class="edu">وزارة التعليم</div>
+                        <div class="school">متوسطة تحفيظ القرآن الأولى ببيشة</div>
+                    </div>
+
+                    <div class="cert-medal">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+
+                    <div class="cert-date-box">
+                        <div>#اليوم_الدولي_للتسامح</div>
+                        <div style="color: var(--text-muted); margin-top: 2px;">16 نوفمبر</div>
+                    </div>
+                </div>
+
+                <h2 class="cert-main-title">شهادة شكر وتقدير</h2>
+                <div class="cert-sub-slogan">«التسامح قوة أخلاقية وجمال إنساني»</div>
+
+                <p class="cert-body-text">
+                    تشهد إدارة <strong>متوسطة تحفيظ القرآن الأولى ببيشة</strong> بأن الطالبة:
+                </p>
+
+                <div class="cert-student-plate">
+                    <span id="certNameDisplay" class="cert-student-name">أجوان يوسف القرني</span>
+                    <span id="certClassDisplay" class="cert-student-grade">من الصف: الثالث المتوسط تحفيظ (ب)</span>
+                </div>
+
+                <p class="cert-description">
+                    قد أتمت بنجاح مبادرة <strong>«التسامح.. قيمة تُبنى بالتربية»</strong> بمناسبة اليوم الدولي للتسامح، تقديراً لوعيها القيمي وإسهامها الإيجابي في نشر ثقافة العفو والاحترام والمحبة داخل المجتمع المدرسي.
+                </p>
+
+                <div class="cert-footer-grid">
+                    <div class="cert-footer-right">
+                        <div style="font-weight: 700; color: var(--text-muted);">لنكن ...</div>
+                        <div style="font-weight: 800; color: var(--saudi-green);">جيلاً يعفو ويسامح</div>
+                    </div>
+
+                    <div class="cert-seal">
+                        <span>وسام التميز</span>
+                        <span style="color: var(--moe-teal);">سفيرة التسامح</span>
+                    </div>
+
+                    <div class="cert-footer-left">
+                        <div class="principal-label">مــديرة المـــدرسة:</div>
+                        <div class="principal-name">أ. مها الشهراني</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. تذييل الصفحة -->
+    <footer class="footer no-print">
+        <div class="container">
+            <div class="footer-rights">All Rights Reserved 2026©</div>
+            <div class="footer-brand">أجوان اليوسف | <span>Alajwanah</span></div>
+            <div class="footer-location">بيشة - المملكة العربية السعودية</div>
+        </div>
+    </footer>
+
+    <!-- زر واتساب العائم -->
+    <a href="https://wa.me/966565588869" target="_blank" rel="noopener" class="whatsapp-float no-print" aria-label="تواصل عبر واتساب">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.766-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/>
+        </svg>
+    </a>
+
+    <!-- رسالة إشعار -->
+    <div id="toast" class="toast no-print">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2.4">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span id="toastText"></span>
+    </div>
+
+    <!-- =========================================================
+         10. البرمجة التفاعلية وتوليد الشهادة عبر Canvas مدمج
+         ========================================================= -->
+    <script>
+        const quizData = [
+            {
+                question: "1. ما المفهوم الصحيح للتسامح كما تعلمناه في ديننا وقيمنا؟",
+                options: [
+                    "الضعف والخوف من مواجهة الآخرين",
+                    "سموّ النفس ونقاء القلب والترفع عن رد الإساءة بمثلها",
+                    "تجاهل المشكلات دون السعي لحلها"
+                ],
+                correctIndex: 1,
+                feedback: "أحسنتِ! التسامح قوة أخلاقية وسموّ نفس وترفع عن الإساءة."
+            },
+            {
+                question: "2. ماذا قال النبي ﷺ لأهل مكة يوم الفتح مجسداً أروع صور العفو عند المقدرة؟",
+                options: [
+                    "اذهبوا فأنتم الطلقاء",
+                    "لكلٍّ منكم شأنه",
+                    "انتظروا حتى نحاسبكم"
+                ],
+                correctIndex: 0,
+                feedback: "رائعة! لقد ضرب نبينا ﷺ أسمى مثال في العفو والرحمة."
+            },
+            {
+                question: "3. في مدرستنا نتعلم أن نتعامل مع اختلاف الآراء بين الزميلات بـ:",
+                options: [
+                    "المقاطعة والغضب السريع",
+                    "الحوار الراقي دون إقصاء، والاختلاف دون إساءة",
+                    "فرض الرأي بالقوة"
+                ],
+                correctIndex: 1,
+                feedback: "إجابة موفقة! الحوار والاحترام هما أساس بيئتنا المدرسية."
+            },
+            {
+                question: "4. ما الأثر الإيجابي للتسامح على نفسية الطالبة وصحتها؟",
+                options: [
+                    "يزيد من التوتر والقلق المستمر",
+                    "يمنح القلب الطمأنينة والصفاء النفسي ويعزز الإبداع",
+                    "لا يؤثر في العلاقات الإنسانية"
+                ],
+                correctIndex: 1,
+                feedback: "صحيح! التسامح يحرر القلب من ثقل الغضب ويمنح السكينة."
+            },
+            {
+                question: "5. متى يحتفي العالم ومجتمعنا التعليمي باليوم الدولي للتسامح؟",
+                options: [
+                    "16 نوفمبر من كل عام",
+                    "1 يناير من كل عام",
+                    "23 سبتمبر من كل عام"
+                ],
+                correctIndex: 0,
+                feedback: "ممتازة! 16 نوفمبر هو اليوم الدولي للتسامح."
+            }
+        ];
+
+        let currentIndex = 0;
+        let score = 0;
+        let answeredCurrent = false;
+
+        const nameInput = document.getElementById('studentNameInput');
+        const classInput = document.getElementById('studentClassInput');
+
+        function syncCertificateDetails() {
+            const sName = nameInput.value.trim() || 'أجوان يوسف القرني';
+            const sClass = classInput.value.trim() || 'الثالث المتوسط تحفيظ (ب)';
+            document.getElementById('certNameDisplay').textContent = sName;
+            document.getElementById('certClassDisplay').textContent = `من الصف: ${sClass}`;
+        }
+
+        nameInput.addEventListener('input', syncCertificateDetails);
+        classInput.addEventListener('input', syncCertificateDetails);
+
+        function renderQuestion() {
+            answeredCurrent = false;
+            const item = quizData[currentIndex];
+            document.getElementById('questionCounter').textContent = `السؤال ${currentIndex + 1} من ${quizData.length}`;
+            document.getElementById('progressBar').style.width = `${((currentIndex + 1) / quizData.length) * 100}%`;
+            document.getElementById('questionText').textContent = item.question;
+
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+
+            item.options.forEach((optText, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `<span>${optText}</span>`;
+                btn.onclick = () => selectOption(idx, btn);
+                optionsContainer.appendChild(btn);
+            });
+
+            const feedbackBanner = document.getElementById('feedbackBanner');
+            feedbackBanner.className = 'feedback-banner';
+            feedbackBanner.style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        function selectOption(selectedIndex, clickedBtn) {
+            if (answeredCurrent) return;
+            answeredCurrent = true;
+
+            const item = quizData[currentIndex];
+            const allBtns = document.querySelectorAll('.option-btn');
+            allBtns.forEach(b => b.disabled = true);
+
+            const feedbackBanner = document.getElementById('feedbackBanner');
+
+            if (selectedIndex === item.correctIndex) {
+                score++;
+                clickedBtn.classList.add('correct');
+                clickedBtn.innerHTML += `<span>✔</span>`;
+                feedbackBanner.className = 'feedback-banner show success';
+                feedbackBanner.textContent = item.feedback;
+            } else {
+                clickedBtn.classList.add('wrong');
+                clickedBtn.innerHTML += `<span>✖</span>`;
+                allBtns[item.correctIndex].classList.add('correct');
+                feedbackBanner.className = 'feedback-banner show encourage';
+                feedbackBanner.textContent = `محاولة جميلة! الإجابة الصحيحة هي: "${item.options[item.correctIndex]}"`;
+            }
+
+            document.getElementById('scoreDisplay').textContent = `النقاط: ${score} / ${quizData.length}`;
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.querySelector('span').textContent = (currentIndex === quizData.length - 1) ? 'إصدار الشهادة الآن' : 'السؤال التالي';
+            nextBtn.style.display = 'inline-flex';
+        }
+
+        function handleNextQuestion() {
+            currentIndex++;
+            if (currentIndex < quizData.length) {
+                renderQuestion();
+            } else {
+                completeQuiz();
+            }
+        }
+
+        function completeQuiz() {
+            document.getElementById('quizBody').style.display = 'none';
+            const resultBox = document.getElementById('quizResult');
+            resultBox.style.display = 'block';
+            document.getElementById('finalScoreText').textContent = `حصلتِ على ${score} من ${quizData.length} نقاط في تحدي التسامح!`;
+
+            syncCertificateDetails();
+            const certSection = document.getElementById('certificateSection');
+            certSection.classList.add('visible');
+            setTimeout(() => {
+                certSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+        }
+
+        function resetQuiz() {
+            currentIndex = 0;
+            score = 0;
+            document.getElementById('scoreDisplay').textContent = `النقاط: 0 / ${quizData.length}`;
+            document.getElementById('quizResult').style.display = 'none';
+            document.getElementById('quizBody').style.display = 'block';
+            renderQuestion();
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastText').textContent = message;
+            toast.style.display = 'flex';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3500);
+        }
+
+        function downloadCertificatePNG() {
+            const sName = nameInput.value.trim() || 'أجوان يوسف القرني';
+            const sClass = classInput.value.trim() || 'الثالث المتوسط تحفيظ (ب)';
+
+            const canvas = document.createElement('canvas');
+            canvas.width = 1600;
+            canvas.height = 1130;
+            const ctx = canvas.getContext('2d');
+
+            const bgGrad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            bgGrad.addColorStop(0, '#FFFFFF');
+            bgGrad.addColorStop(1, '#FDFBF4');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const borderGrad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            borderGrad.addColorStop(0, '#D4AF37');
+            borderGrad.addColorStop(0.5, '#00A896');
+            borderGrad.addColorStop(1, '#6A359C');
+            ctx.strokeStyle = borderGrad;
+            ctx.lineWidth = 26;
+            ctx.strokeRect(24, 24, canvas.width - 48, canvas.height - 48);
+
+            ctx.strokeStyle = '#D4AF37';
+            ctx.lineWidth = 4;
+            ctx.strokeRect(54, 54, canvas.width - 108, canvas.height - 108);
+
+            ctx.direction = 'rtl';
+            ctx.textAlign = 'right';
+            ctx.fillStyle = '#006C35';
+            ctx.font = 'bold 24px Tajawal, Arial';
+            ctx.fillText('المملكة العربية السعودية', 1500, 125);
+
+            ctx.fillStyle = '#475569';
+            ctx.font = 'bold 22px Tajawal, Arial';
+            ctx.fillText('وزارة التعليم ', 1500, 162);
+
+            ctx.fillStyle = '#6A359C';
+            ctx.font = '800 28px Cairo, Arial';
+            ctx.fillText('متوسطة تحفيظ القرآن الأولى ببيشة', 1500, 204);
+
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#007A6E';
+            ctx.font = 'bold 24px Tajawal, Arial';
+            ctx.fillText('#اليوم_الدولي_للتسامح', 100, 135);
+            ctx.fillStyle = '#64748B';
+            ctx.font = 'bold 22px Tajawal, Arial';
+            ctx.fillText('16 نوفمبر', 100, 172);
+
+            ctx.strokeStyle = 'rgba(212, 175, 55, 0.6)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(100, 235);
+            ctx.lineTo(1500, 235);
+            ctx.stroke();
+
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#6A359C';
+            ctx.font = '900 68px Cairo, Arial';
+            ctx.fillText('شهادة شكر وتقدير', canvas.width / 2, 340);
+
+            ctx.fillStyle = '#00A896';
+            ctx.font = 'bold 30px Tajawal, Arial';
+            ctx.fillText('«التسامح قوة أخلاقية وجمال إنساني»', canvas.width / 2, 395);
+
+            ctx.fillStyle = '#1E293B';
+            ctx.font = 'bold 32px Tajawal, Arial';
+            ctx.fillText('تشهد إدارة متوسطة تحفيظ القرآن الأولى ببيشة بأن الطالبة:', canvas.width / 2, 480);
+
+            ctx.fillStyle = '#F0FDFA';
+            ctx.fillRect(360, 515, 880, 135);
+            ctx.strokeStyle = '#D4AF37';
+            ctx.lineWidth = 3;
+            ctx.strokeRect(360, 515, 880, 135);
+
+            ctx.fillStyle = '#0F172A';
+            ctx.font = '900 48px Cairo, Arial';
+            ctx.fillText(sName, canvas.width / 2, 578);
+
+            ctx.fillStyle = '#007A6E';
+            ctx.font = 'bold 28px Tajawal, Arial';
+            ctx.fillText(`من الصف: ${sClass}`, canvas.width / 2, 626);
+
+            ctx.fillStyle = '#334155';
+            ctx.font = 'bold 28px Tajawal, Arial';
+            ctx.fillText('قد أتمت بنجاح مبادرة «التسامح.. قيمة تُبنى بالتربية» بمناسبة اليوم الدولي للتسامح،', canvas.width / 2, 725);
+            ctx.fillText('تقديراً لوعيها القيمي وإسهامها الإيجابي في نشر ثقافة العفو والاحترام والمحبة.', canvas.width / 2, 772);
+
+            ctx.strokeStyle = 'rgba(212, 175, 55, 0.6)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(100, 845);
+            ctx.lineTo(1500, 845);
+            ctx.stroke();
+
+            ctx.textAlign = 'right';
+            ctx.fillStyle = '#64748B';
+            ctx.font = 'bold 24px Tajawal, Arial';
+            ctx.fillText('لنكن ...', 1480, 915);
+            ctx.fillStyle = '#006C35';
+            ctx.font = '800 28px Cairo, Arial';
+            ctx.fillText('جيلاً يعفو ويسامح', 1480, 960);
+
+            ctx.save();
+            ctx.translate(canvas.width / 2, 945);
+            ctx.beginPath();
+            ctx.arc(0, 0, 68, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(254, 243, 199, 0.65)';
+            ctx.fill();
+            ctx.setLineDash([8, 6]);
+            ctx.strokeStyle = '#D4AF37';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#6A359C';
+            ctx.font = '800 20px Cairo, Arial';
+            ctx.fillText('وسام التميز', 0, -6);
+            ctx.fillStyle = '#007A6E';
+            ctx.fillText('سفيرة التسامح', 0, 24);
+            ctx.restore();
+
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#64748B';
+            ctx.font = 'bold 24px Tajawal, Arial';
+            ctx.fillText('مــديرة المـــدرسة:', 120, 915);
+            ctx.fillStyle = '#6A359C';
+            ctx.font = '900 32px Cairo, Arial';
+            ctx.fillText('أ. مها الشهراني', 120, 962);
+
+            const link = document.createElement('a');
+            link.download = `شهادة_التسامح_${sName.replace(/\s+/g, '_')}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+            showToast('تم تحميل صورة الشهادة بنجاح!');
+        }
+
+        window.onload = function() {
+            renderQuestion();
+            syncCertificateDetails();
+        };
+    </script>
+</body>
+</html>
